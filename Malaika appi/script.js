@@ -31,7 +31,7 @@ function injectComponents() {
                 <p>Clinical Psychologist offering online therapy tailored to your needs. A safe space to think, feel, and heal.</p>
                 <div class="footer-social-icons">
                     <a href="https://www.facebook.com/share/1aTFhaepJs/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/realignedmind_withmalaika/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/malaika-alvi-72a0913a7" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
