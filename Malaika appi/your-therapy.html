@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Therapy Journey | Malaika Alvi</title>
+    <meta name="description"
+        content="Explore how your online therapy journey unfolds, from the first consultation to evidence-based interventions.">
+    <meta property="og:title" content="Your Therapy Journey | Malaika Alvi">
+    <meta property="og:description"
+        content="A comprehensive guide to your psychological treatments and therapeutic milestones.">
+    <link rel="stylesheet" href="global.css?v=21">
+    <link rel="stylesheet" href="subpage-header.css?v=21">
+    <script src="https://kit.fontawesome.com/009360a429.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific Styles for Your Therapy Hub */
+        .heavy-info-section {
+            padding: 100px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .heavy-info-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .heavy-info-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-blue);
+            margin: 20px auto 0;
+        }
+
+        .heavy-content p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto 30px;
+        }
+
+        .highlight-text {
+            color: var(--secondary-blue);
+            font-weight: 600;
+        }
+
+        /* Hub Grid */
+        .hub-grid-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .hub-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hub-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--secondary-blue);
+        }
+
+        .hub-card-content {
+            padding: 40px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hub-icon {
+            font-size: 40px;
+            color: var(--secondary-blue);
+            margin-bottom: 20px;
+        }
+
+        .hub-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hub-card p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .hub-link {
+            color: var(--primary-blue);
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.3s;
+            margin-top: auto;
+        }
+
+        .hub-link i {
+            margin-left: 8px;
+            transition: 0.3s;
+        }
+
+        .hub-card:hover .hub-link {
+            color: var(--secondary-blue);
+        }
+
+        .hub-card:hover .hub-link i {
+            transform: translateX(5px);
+        }
+
+        /* Interactive "Deep Dive" Box */
+        .deep-dive-box {
+            margin: 80px auto 0;
+            padding: 60px;
+            background: linear-gradient(135deg, #001a2c 0%, #004e82 100%);
+            border-radius: 20px;
+            color: #fff;
+            text-align: center;
+            max-width: 1000px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deep-dive-box h2 {
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .deep-dive-box p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .glow-overlay {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            animation: rotate 20s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Hero -->
+    <div id="header">
+        <video autoplay muted playsinline loop class="back-video">
+            <source src="images/main.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Malaika Alvi</a></div>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- Direct Link now acts as the Hub -->
+                <li><a href="your-therapy.html" class="active">Your Therapy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </nav>
+        <div class="header-content" data-aos="fade-up">
+            <div class="header-inner">
+                <h1>Beyond The Surface</h1>
+                <p class="hero-sub" style="font-family: 'Playfair Display', serif;">Deep work for lasting change.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heavy Info Section -->
+    <div class="heavy-info-section">
+        <div class="container">
+            <h2 class="heavy-info-title" data-aos="fade-up">The Architecture of Healing</h2>
+            <div class="heavy-content" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    True psychological healing is not about temporary relief or suppressing symptoms. It is a <span
+                        class="highlight-text">profound restructuring of the self</span>.
+                    We delve into the subconscious patterns, the silent emotional scripts, and the biological rhythms
+                    that define your existence.
+                </p>
+                <p>
+                    In my practice, we don't just talk; we rebuild. Whether it is rewiring the anxious brain, processing
+                    deep-seated trauma,
+                    or unlocking the potential of a neurodivergent mind, we use advanced, evidence-based frameworks to
+                    facilitate <span class="highlight-text">metamorphic change</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hub Grid Section -->
+    <div class="hub-grid-section">
+        <div class="container">
+            <h1 class="sub-title">Explore <span>Your Path</span></h1>
+
+            <div class="hub-grid">
+                <!-- Mental Health -->
+                <div class="hub-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="hub-card-content">
+                        <div>
+                            <i class="fas fa-brain hub-icon"></i>
+                            <h3>Mental Health & Wellbeing</h3>
+                            <p>Comprehensive support for anxiety, depression, and emotional regulation. Reclaim your
+                                peace of mind.</p>
+                        </div>
+                        <a href="mental-health.html" class="hub-link">Explore Area <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- ADHD -->
+                <div class="hub-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hub-card-content">
+                        <div>
+                            <i class="fas fa-bolt hub-icon"></i>
+                            <h3>Adult ADHD</h3>
+                            <p>Navigating the neurodivergent experience. Focus, executive function, and harnessing your
+                                unique mind.</p>
+                        </div>
+                        <a href="adhd.html" class="hub-link">Explore Area <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sleep -->
+                <div class="hub-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hub-card-content">
+                        <div>
+                            <i class="fas fa-moon hub-icon"></i>
+                            <h3>Sleep Support</h3>
+                            <p>Restoring the biological foundation of health. Insomnia treatment and sleep hygiene
+                                optimization.</p>
+                        </div>
+                        <a href="sleep.html" class="hub-link">Explore Area <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Approaches -->
+                <div class="hub-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="hub-card-content">
+                        <div>
+                            <i class="fas fa-fingerprint hub-icon"></i>
+                            <h3>Our Approach</h3>
+                            <p>The methodology behind the magic. CBT, Psychoanalysis, and human-centered design.</p>
+                        </div>
+                        <a href="approaches.html" class="hub-link">Explore Area <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fees -->
+                <div class="hub-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="hub-card-content">
+                        <div>
+                            <i class="fas fa-file-invoice-dollar hub-icon"></i>
+                            <h3>Fees & Logistics</h3>
+                            <p>Transparent pricing, session details, and online therapy setup.</p>
+                        </div>
+                        <a href="fees.html" class="hub-link">Explore Area <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heavy Footer Box -->
+            <div class="deep-dive-box" data-aos="zoom-in">
+                <div class="glow-overlay"></div>
+                <h2>Ready to go deeper?</h2>
+                <p>The journey of a thousand miles begins with a single step of courage. Let us walk this path together.
+                </p>
+                <a href="contact.html" class="btn"
+                    style="background: #fff; color: var(--primary-blue); border: none;">Begin Your Transformation</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ offset: 100, duration: 1000 });
+    </script>
+</body>
+
+</html>

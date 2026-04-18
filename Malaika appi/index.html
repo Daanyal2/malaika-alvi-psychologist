@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaika Alvi - Clinical Psychologist</title>
+    <meta name="description"
+        content="Malaika Alvi - Clinical Psychologist offering online therapy tailored to your needs. A safe space to think, feel, and heal.">
+    <meta name="keywords" content="Clinical Psychologist, Therapy, Mental Health, Online Psychologist, Malaika Alvi">
+    <meta property="og:title" content="Malaika Alvi - Clinical Psychologist">
+    <meta property="og:description"
+        content="A safe space to think, feel, and heal. Explore tailored online therapy sessions.">
+    <link rel="stylesheet" href="global.css?v=20">
+    <link rel="stylesheet" href="home.css?v=20">
+    <script src="https://kit.fontawesome.com/009360a429.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!------- HOME / HERO -------->
+    <div id="header">
+        <video autoplay muted playsinline loop class="back-video">
+            <source src="images/main.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Malaika Alvi</a></div>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="your-therapy.html">Your Therapy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </nav>
+
+        <div class="header-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="header-inner">
+                <h1>Malaika Alvi</h1>
+                <h2>Clinical Psychologist</h2>
+                <p class="hero-sub">A safe space to think, feel, and heal.</p>
+                <p class="hero-desc">
+                    I work with individuals to provide psychological counseling, assessments, and tailored support,
+                    helping
+                    you navigate challenges and build emotional well-being.
+                </p>
+                <a href="https://calendar.app.google/C7Byx95WtfmeYdr89" target="_blank" class="btn">Book a
+                    Consultation</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-section text-center">
+        <div class="container">
+            <h1 class="sub-title">Welcome to Your <span>Safe Space</span></h1>
+            <p class="intro-p">
+                I provide psychological counseling and mental health support to help individuals manage emotional and
+                psychological challenges. My approach focuses on creating a safe, supportive space for healing, growth,
+                and positive change.
+            </p>
+            <a href="about.html" class="btn2">Read More About Me</a>
+        </div>
+    </div>
+
+    <div id="testimonials" class="section-bg testimonials-section">
+        <div class="container">
+            <h1 class="sub-title">What My <span>Clients Say</span></h1>
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <p>Mujhe pehli dafa laga ke someone actually listening to me. Therapy sessions ne meri
+                                anxiety aur overthinking ko manage karna sikhaya. I feel more in control now.</p>
+                            <h4>— M.K</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <p>Therapist bohat calm aur understanding thi. CBT techniques ne mujhe negative thoughts
+                                challenge karna sikhaya. Sessions practical aur helpful thay.</p>
+                            <h4>— L.H</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <p>Main low mood aur stress se guzar rahi thi. Therapy ke through mujhe coping skills mile
+                                jo main daily life mein use karti hoon. Bohat supportive experience raha.</p>
+                            <h4>— A.S</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <p>Psychoeducation ne mujhe apni problems clearly samajhne mein help ki. Step-by-step
+                                guidance bohat effective thi aur judgment bilkul nahi tha.</p>
+                            <h4>— R.M</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <p>First consultation se hi mujhe clarity mil gayi. Therapist ne safe aur respectful
+                                environment diya jahan main openly baat kar saki.</p>
+                            <h4>— S.F</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="explore-btn-wrapper">
+                <a href="your-therapy.html" class="btn">Explore My Services</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.testimonials-swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            autoplay: { delay: 5000 },
+            slidesPerView: 1,
+            spaceBetween: 30,
+        });
+
+        // Initialize Animate on Scroll
+        AOS.init({ offset: 100, duration: 1000 });
+
+
+    </script>
+</body>
+
+</html>

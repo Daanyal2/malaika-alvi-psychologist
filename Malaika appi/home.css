@@ -1,0 +1,82 @@
+/* INDEX SPECIFIC STYLES */
+#header {
+    height: 100vh;
+}
+
+.header-content {
+    /* Animation moved to inner wrapper to avoid conflict with slide-in */
+}
+
+.header-inner {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.header-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.header-content h2 {
+    font-size: 32px;
+    color: var(--secondary-blue);
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #ddd;
+    font-style: italic;
+}
+
+/* TESTIMONIALS (Swiper Custom) */
+.testimonial-slide {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.testimonial-slide p {
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.testimonial-slide h4 {
+    color: var(--secondary-blue);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    #header {
+        height: 100vh !important;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .header-content h2 {
+        font-size: 20px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+}

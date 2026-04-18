@@ -1,0 +1,73 @@
+/* FOR MENTAL HEALTH, ADHD, SLEEP, APPROACHES */
+
+.support-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.support-item {
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid var(--secondary-blue);
+    transition: 0.3s;
+}
+
+.support-item:hover {
+    transform: translateX(10px);
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+}
+
+.support-item span {
+    font-size: 32px;
+    color: #ccc;
+    font-weight: 800;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.support-item p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--text-dark);
+}
+
+/* Approaches Grid */
+.approaches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.approach-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+    transition: 0.3s;
+    border-top: 4px solid transparent;
+}
+
+.approach-card:hover {
+    transform: translateY(-10px);
+    border-top-color: var(--secondary-blue);
+}
+
+.approach-card i {
+    font-size: 32px;
+    color: var(--secondary-blue);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .support-list-grid,
+    .approaches-grid {
+        grid-template-columns: 1fr;
+    }
+}

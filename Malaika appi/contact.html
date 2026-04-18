@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Malaika Alvi - Clinical Psychologist</title>
+    <meta name="description"
+        content="Get in touch with Malaika Alvi for online psychology consultations and mental health support.">
+    <meta property="og:title" content="Contact Me | Malaika Alvi">
+    <meta property="og:description" content="Reach out to book a consultation and begin your healing journey.">
+    <link rel="stylesheet" href="global.css?v=20">
+    <link rel="stylesheet" href="subpage-header.css?v=20">
+    <link rel="stylesheet" href="contact.css?v=20">
+    <script src="https://kit.fontawesome.com/009360a429.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header / Hero -->
+    <div id="header">
+        <video autoplay muted playsinline loop class="back-video">
+            <source src="images/main.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Malaika Alvi</a></div>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="your-therapy.html">Your Therapy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </nav>
+        <div class="header-content" data-aos="fade-up">
+            <h1>Contact Me</h1>
+            <p>I'm Here to Listen & Support Your Journey</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section-padding" style="padding: 100px 0;">
+        <div class="container">
+            <h1 class="sub-title">Get In <span>Touch</span></h1>
+            <div class="contact-row">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <p>If you have any questions or would like to schedule a consultation, please feel free to reach out
+                        via email or use the form below.</p>
+                    <div style="margin-top: 30px;">
+                        <p><i class="fas fa-paper-plane" style="color: var(--secondary-blue); margin-right: 15px;"></i>
+                            realignedmind1@gmail.com</p>
+                        <p><i class="fas fa-video" style="color: var(--secondary-blue); margin-right: 15px;"></i> Online
+                            Video Sessions Worldwide</p>
+                    </div>
+                    <div class="footer-social-icons" style="margin-top: 30px; justify-content: flex-start;">
+                        <a href="https://www.facebook.com/share/1aTFhaepJs/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/malaika-alvi-72a0913a7" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form name="contact" method="POST" action="https://formsubmit.co/realignedmind1@gmail.com">
+                        <!-- Formsubmit.co configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Malaika Alvi Site">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                title="Please enter a valid, registered email address (e.g. name@domain.com)" required>
+                        </div>
+                        <input type="text" name="Subject" placeholder="Subject" required
+                            style="width: 100%; margin: 20px 0; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px;">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 20px; cursor: pointer;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ offset: 100, duration: 1000 });
+    </script>
+</body>
+
+</html>
