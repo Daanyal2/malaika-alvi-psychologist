@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://malaika-alvi.vercel.app/sitemap.xml
