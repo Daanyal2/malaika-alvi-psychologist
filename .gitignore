@@ -1,0 +1,13 @@
+# Ignore other project folders
+/My portfolio/
+/faheem/
+/muzamil/
+/office/
+/office - orig/
+/personal project/
+
+# Ignore IDE settings and systems files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
